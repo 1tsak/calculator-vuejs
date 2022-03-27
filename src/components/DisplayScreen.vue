@@ -9,7 +9,7 @@ export default {
     props:{
         output:{
             type:String,
-            default:"0"
+            default:"'0'"
         }
     }
 }

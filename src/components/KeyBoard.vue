@@ -60,4 +60,7 @@ export default {
   font-size: 18px;
   background: rgba(0, 0, 0, 0.363);
 }
+.cbtn:hover{
+  background: #000;
+}
 </style>

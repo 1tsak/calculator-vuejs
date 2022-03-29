@@ -1,5 +1,5 @@
 <template>
-    <div class="display-border">
+    <div class="display-border" style="max-width:450px; margin:auto; background: #234; color:white;">
         <p @keypress="updateScreen">{{output}}</p>
     </div>
 </template>
@@ -17,8 +17,8 @@ export default {
 </script>
 <style scoped>
 .display-border{
-    border: 1px solid black;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     display: flex;
     justify-content: right;
 }

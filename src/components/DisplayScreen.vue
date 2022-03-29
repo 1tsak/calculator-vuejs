@@ -1,6 +1,6 @@
 <template>
     <div class="display-border">
-        <p>{{output}}</p>
+        <p @keypress="updateScreen">{{output}}</p>
     </div>
 </template>
 <script>
@@ -12,6 +12,7 @@ export default {
             default:"'0'"
         }
     }
+    
 }
 </script>
 <style scoped>

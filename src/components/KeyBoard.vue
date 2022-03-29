@@ -1,34 +1,34 @@
 <template>
   <div class="display-border">
     <div class="row row1">
-      <button class="cbtn" @click="emit('C')">C</button>
-      <button class="cbtn">X</button>
-      <button class="cbtn">%</button>
-      <button class="cbtn">/</button>
+      <button class="cbtn" @click="this.emit('C')">C</button>
+      <button class="cbtn" @click="this.emit('X')">X</button>
+      <button class="cbtn" @click="this.emit('%')">%</button>
+      <button class="cbtn" @click="this.emit('/')">/</button>
     </div>
     <div class="row row2">
-      <button class="cbtn">x</button>
-      <button class="cbtn">9</button>
-      <button class="cbtn">8</button>
-      <button class="cbtn">7</button>
+      <button class="cbtn" @click="this.emit('x')">x</button>
+      <button class="cbtn" @click="this.emit('9')">9</button>
+      <button class="cbtn" @click="this.emit('8')">8</button>
+      <button class="cbtn" @click="this.emit('7')">7</button>
     </div>
     <div class="row row3">
-      <button class="cbtn">-</button>
-      <button class="cbtn">6</button>
-      <button class="cbtn">5</button>
-      <button class="cbtn">4</button>
+      <button class="cbtn" @click="this.emit('-')">-</button>
+      <button class="cbtn" @click="this.emit('6')">6</button>
+      <button class="cbtn" @click="this.emit('5')">5</button>
+      <button class="cbtn" @click="this.emit('4')">4</button>
     </div>
     <div class="row row4">
-      <button class="cbtn">+</button>
-      <button class="cbtn">3</button>
-      <button class="cbtn">2</button>
-      <button class="cbtn">1</button>
+      <button class="cbtn" @click="this.emit('+')">+</button>
+      <button class="cbtn" @click="this.emit('3')">3</button>
+      <button class="cbtn" @click="this.emit('2')">2</button>
+      <button class="cbtn" @click="this.emit('1')">1</button>
     </div>
     <div class="row row5">
-      <button class="cbtn">=</button>
-      <button class="cbtn">.</button>
-      <button class="cbtn">0</button>
-      <button class="cbtn">00</button>
+      <button class="cbtn" @click="this.emit('=')">=</button>
+      <button class="cbtn" @click="this.emit('.')">.</button>
+      <button class="cbtn" @click="this.emit('0')">0</button>
+      <button class="cbtn" @click="this.emit('00')">00</button>
     </div>
   </div>
 </template>

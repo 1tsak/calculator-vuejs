@@ -1,7 +1,7 @@
 <template>
 <h1>Calculator</h1>
-<DisplayScreen :output="0"/>
-<KeyBoard/>
+<DisplayScreen :output="this.output"/>
+<KeyBoard @key-press="updateScreen"/>
 </template>
 
 <script>
@@ -13,7 +13,21 @@ export default {
   components: {
     DisplayScreen,
     KeyBoard
-  }
+  },
+  data(){
+    return {
+      output:"abcd"
+
+      }
+
+    }
+  ,
+  methods:{
+        updateScreen(output){
+            this.output=output
+            // DisplayScreen.
+        }
+    }
 }
 </script>
 

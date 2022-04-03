@@ -1,8 +1,9 @@
 <template>
-  <div class="key-border" style="max-width:450px; margin:auto; background: #234;">
+  <div class="key-border py-3 px-3" style="max-width:450px; margin:auto; background: #234;">
     <div class="row no-gutters">
-      <div class="col-3 cbtn" v-for="n in calculatorkeys" :key="n">
-        <div class="" @click="emit(n)" style="margin:10px; color:white;">
+      <div class="col-3"  @click="emit(n)" v-for="n in calculatorkeys" :key="n">
+        <div class="lead text-white text-center m-1 py-3 bg-vue-dark rounded hover-class"
+        :class="{'green-bg':['%','C','/','x','*','+','-','='].includes(n)}" >
           {{n}}
         </div>
       </div>
@@ -15,18 +16,19 @@ export default {
   props: {},
   data(){
     return{
-      calculatorkeys:['%','C','/','x',7,8,9,'X',4,5,6,'-',1,2,3,'+','00',0,'.','='],
+      calculatorkeys:['%','C','/','x',7,8,9,'*',4,5,6,'-',1,2,3,'+','00',0,'.','='],
 
     }
   },
   methods:{
       emit(a){
-          this.$emit('key-press',a);
+          this.$emit('key-press',a+'');
       }
   }
 };
 </script>
 <style scoped>
+
 .key-border {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -35,9 +37,14 @@ export default {
 .row {
   display: flex;
 }
-.cbtn {
+.bg-vue-dark {
+  background: #31475e;
 }
-.cbtn:hover{
+
+.green-bg{
+  background: rgb(64, 109, 231);
+}
+.hover-class:hover{
   background: #000;
   cursor: pointer;
 }

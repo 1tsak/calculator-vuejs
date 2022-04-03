@@ -1,6 +1,6 @@
 <template>
     <div class="display-border" style="max-width:450px; margin:auto; background: #234; color:white;">
-        <p @keypress="updateScreen">{{output}}</p>
+        <p style="font-size:1.5rem" class="bg-dark w-75 m10 font-monospace m-auto p-2" @keypress="updateScreen">{{output}}</p>
     </div>
 </template>
 <script>

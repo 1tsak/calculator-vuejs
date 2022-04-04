@@ -1,7 +1,13 @@
 <template>
-  <h1>Calculator</h1>
+  <h1 style=" margin:10px;font-family:monospace">Calculator</h1>
   <DisplayScreen :output="this.output" />
   <KeyBoard @key-press="updateScreen" />
+  <div class="footer m-lg-3">
+    
+  <a href="https://instagram.com/1ts.akash" ><img class="social-ic" src="./assets/instagram-light.svg" alt="insta"></a>
+  <a href="https://github.com/1tsak" ><img class="social-ic" src="./assets/github-light.svg" alt="github"></a>
+  <a href="https://youtube.com/AKBROS" ><img class="social-ic" src="./assets/youtube-light.svg" alt="yt"></a>
+  <p style="margin-top:25px;">Made With💖 by 1tsak</p></div>
 </template>
 
 <script>
@@ -78,5 +84,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.social-ic{
+  margin: 8px;
+}
+.social-ic:hover{
+  cursor: pointer;
+  box-shadow: 0px 1px 0px 2px rgba(0, 0, 0, 0.259);
 }
 </style>

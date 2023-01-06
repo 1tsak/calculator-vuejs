@@ -2,9 +2,8 @@
 
 ### Description :- It's a simple numeric calculator built using vue js 3, you are welcome to fork this repo and extend it, Thanks :)
 
-### Preview Available <a href="https://ak.iocoder.in" target="_blank">#here</a>
+### Preview Available <a href="https://calvuejs.netlify.app" target="_blank">#here</a>
 
-<img src="http://ak.iocoder.in/preview.png">
 
 ## Project setup----
 ```
